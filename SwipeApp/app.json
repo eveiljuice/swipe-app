@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "SWIPE",
+    "slug": "swipe-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FF6B6B"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Приложению нужен доступ к камере для добавления фотографий в профиль",
+        "NSPhotoLibraryUsageDescription": "Приложению нужен доступ к фотогалерее для добавления фотографий в профиль",
+        "NSLocationWhenInUseUsageDescription": "Приложению нужен доступ к геолокации для определения вашего города"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FF6B6B"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Приложению нужен доступ к фотогалерее для добавления фотографий в профиль",
+          "cameraPermission": "Приложению нужен доступ к камере для создания фотографий профиля"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Приложению нужен доступ к геолокации для определения вашего города"
+        }
+      ]
+    ]
+  }
+}
