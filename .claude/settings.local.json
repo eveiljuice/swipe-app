@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run web:*)",
+      "Bash(npx expo start:*)",
+      "Bash(cp:*)",
+      "Bash(taskkill:*)",
+      "Bash(true)",
+      "Bash(npm start)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
